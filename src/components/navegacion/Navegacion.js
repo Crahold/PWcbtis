@@ -1,6 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-const Navegacion = () =>{
+export const Navegacion = () =>{
 
     return(
         <nav id="nav-wrap" className="NInicio">
@@ -11,63 +12,63 @@ const Navegacion = () =>{
             <ul id="nav" className="nav">
                 <li><a href="http://www.dgeti.sep.gob.mx/"><p className="imgDGETI"></p></a></li>
 
-                <li id="back" className="current"><a href="/inicio">Inicio</a></li>
-                <li id="back"><a href="/jornada">Galería Videos <i class="icono fas fa-caret-down"></i></a>
+                <li id="back" className="current"><Link to="/inicio">Inicio</Link></li>
+                <li id="back"><Link to="/jornada">Galería Videos <i class="icono fas fa-caret-down"></i></Link>
                     <ul>
-                        <li><a id="back" href="/jornada">JORNADA DE ORIENTACIÓN VOCACIONAL DGETI</a></li>
-                        <li><a id="back" href="/semananacional">SEMANA NACIONAL DE CIENCIA Y TECNOLOGÍA DGETI</a></li>
+                        <li><Link id="back" to="/jornada">JORNADA DE ORIENTACIÓN VOCACIONAL DGETI</Link></li>
+                        <li><Link id="back" to="/semananacional">SEMANA NACIONAL DE CIENCIA Y TECNOLOGÍA DGETI</Link></li>
                     </ul>
                 </li>
-                <li id="back"><a href="/webinarinfo">Publicaciones <i class="icono fas fa-caret-down"></i></a>
+                <li id="back"><Link to="/webinarinfo">Publicaciones <i class="icono fas fa-caret-down"></i></Link>
                     <ul>
-                        <li><a id="back" href="/webinarinfo">WEBINAR FINANZAS PERSONALES</a></li>
-                        <li><a id="back" href="/congresoinvesdocente">CONGRESO INVESTIGACIÓN DOCENTE</a></li>
-                        <li><a id="back" href="/jamexico">JA MÉXICO</a></li>
-                        <li><a id="back" href="/becadocente">BECA PROFESIONALIZACIÓN DOCENTE</a></li>
-                        <li><a id="back" href="/diplomadosteam">DIPLOMADO STEAM EMS CNAD</a></li>
+                        <li><Link id="back" to="/webinarinfo">WEBINAR FINANZAS PERSONALES</Link></li>
+                        <li><Link id="back" to="/congresoinvesdocente">CONGRESO INVESTIGACIÓN DOCENTE</Link></li>
+                        <li><Link id="back" to="/jamexico">JA MÉXICO</Link></li>
+                        <li><Link id="back" to="/becadocente">BECA PROFESIONALIZACIÓN DOCENTE</Link></li>
+                        <li><Link id="back" to="/diplomadosteam">DIPLOMADO STEAM EMS CNAD</Link></li>
                     </ul>
                 </li>
-                <li id="back"><a href="/congresoinvesdocente">Convocatorias 2020 <i class="icono fas fa-caret-down"></i></a>
+                <li id="back"><Link to="/congresoinvesdocente">Convocatorias 2020 <i class="icono fas fa-caret-down"></i></Link>
                     <ul>
-                        <li><a id="back" href="/congresoinvesdocente">CONGRESO INVESTIGACIÓN DOCENTE</a></li>
-                        <li><a id="back" href="/diplomadosteam">DIPLOMADO STEAM EMS CNAD</a></li>
-                        <li><a id="back" href="/becadocente">BECA PROFESIONALIZACIÓN DOCENTE</a></li>
+                        <li><Link id="back" to="/congresoinvesdocente">CONGRESO INVESTIGACIÓN DOCENTE</Link></li>
+                        <li><Link id="back" to="/diplomadosteam">DIPLOMADO STEAM EMS CNAD</Link></li>
+                        <li><Link id="back" to="/becadocente">BECA PROFESIONALIZACIÓN DOCENTE</Link></li>
                     </ul>
                 </li>
-                <li id="back"><a href="/goee2021">Documentos <i class="icono fas fa-caret-down"></i></a>
+                <li id="back"><Link to="/goee2021">Documentos <i class="icono fas fa-caret-down"></i></Link>
                     <ul>
-                        <li><a id="back" href="/goee2021">Guías 2021 <i class="icono fas fa-caret-right"></i></a>
+                        <li><Link id="back" to="/goee2021">Guías 2021 <i class="icono fas fa-caret-right"></i></Link>
                             <ul className="left">
-                                <li><a id="back" href="/goee2021">GUÍA DE OPERACIÓN Y EVALUACIÓN EMPRENDEDORES 2021</a></li>
-                                <li><a id="back" href="/goep2021">GUÍA DE OPERACIÓN Y EVALUACIÓN PROTOTIPOS 2021</a></li>
+                                <li><Link id="back" to="/goee2021">GUÍA DE OPERACIÓN Y EVALUACIÓN EMPRENDEDORES 2021</Link></li>
+                                <li><Link id="back" to="/goep2021">GUÍA DE OPERACIÓN Y EVALUACIÓN PROTOTIPOS 2021</Link></li>
                             </ul>
                         </li>
-                        <li><a id="back" href="/lineamientocomite">Lineamientos <i class="icono fas fa-caret-right"></i></a>
+                        <li><Link id="back" to="/lineamientocomite">Lineamientos <i class="icono fas fa-caret-right"></i></Link>
                             <ul className="left">
-                                <li><a id="back" href="/lineamientocomite">LINEAMIENTOS COMITÉ CONSULTIVO</a></li>
-                                <li><a id="back" href="/lineamientopracticas">LINEAMIENTOS PRÁCTICAS PROFESIONALES</a></li>
+                                <li><Link id="back" to="/lineamientocomite">LINEAMIENTOS COMITÉ CONSULTIVO</Link></li>
+                                <li><Link id="back" to="/lineamientopracticas">LINEAMIENTOS PRÁCTICAS PROFESIONALES</Link></li>
                             </ul>
                         </li>
-                        <li><a id="back" href="/manualinduccion">Manuales <i class="icono fas fa-caret-right"></i></a>
+                        <li><Link id="back" to="/manualinduccion">Manuales <i class="icono fas fa-caret-right"></i></Link>
                             <ul className="left">
-                                <li><a id="back" href="/manualinduccion">MANUAL DE INDUCCIÓN</a></li>
-                                <li><a id="back" href="/manualfunciones">MANUAL DE FUNCIONES</a></li>
-                                <li><a id="back" href="/manualss">MANUAL SERVICIO SOCIAL</a></li>
+                                <li><Link id="back" to="/manualinduccion">MANUAL DE INDUCCIÓN</Link></li>
+                                <li><Link id="back" to="/manualfunciones">MANUAL DE FUNCIONES</Link></li>
+                                <li><Link id="back" to="/manualss">MANUAL SERVICIO SOCIAL</Link></li>
                             </ul>
                         </li>
-                        <li><a id="back" href="/informacioncarreras">¡YA ES HORA!INFORMACIÓN DE LAS CARRERAS E INSTITUCIONES DE EDUCACIÓN SUPERIOR PARA EL CICLO ESCOLAR 2021-2022!</a></li>
-                        <li><a id="back" href="/normastecnicas">DOCS. AIDET <i class="icono fas fa-caret-right"></i></a>
+                        <li><Link id="back" to="/informacioncarreras">¡YA ES HORA!INFORMACIÓN DE LAS CARRERAS E INSTITUCIONES DE EDUCACIÓN SUPERIOR PARA EL CICLO ESCOLAR 2021-2022!</Link></li>
+                        <li><Link id="back" to="/normastecnicas">DOCS. AIDET <i class="icono fas fa-caret-right"></i></Link>
                             <ul className="left">
-                                <li><a id="back" href="/normastecnicas">NORMAS TÉCNICAS Y ADMINISTRATIVAS PARA LAS AIDET 2020</a></li>
-                                <li><a id="back" href="/clubciencias">CLUB DE CIENCIAS</a></li>
+                                <li><Link id="back" to="/normastecnicas">NORMAS TÉCNICAS Y ADMINISTRATIVAS PARA LAS AIDET 2020</Link></li>
+                                <li><Link id="back" to="/clubciencias">CLUB DE CIENCIAS</Link></li>
                             </ul>
                         </li>
                     </ul>
                 </li>
-                <li id="back"><a href="/directorio">Más <i class="icono fas fa-caret-down"></i></a>
+                <li id="back"><Link to="/directorio">Más <i class="icono fas fa-caret-down"></i></Link>
                     <ul>
-                        <li><a id="back" href="/directorio">Directorio</a></li>
-                        <li><a id="back" href="/#">Enlace <i class="icono fas fa-caret-right"></i></a>
+                        <li><Link id="back" to="/directorio">Directorio</Link></li>
+                        <li><Link id="back" to="/#">Enlace <i class="icono fas fa-caret-right"></i></Link>
                             <ul className="left">
                                 <li><a id="back" href="http://educacionmediasuperior.sep.gob.mx/" target="_blank" rel="noopener noreferrer">SEMS</a></li>
                                 <li><a id="back" href="http://uemstis.sep.gob.mx/" target="_blank" rel="noopener noreferrer">UEMSTIS</a></li>

@@ -37,7 +37,7 @@ export const FormsMaestros = ({ maestro, setMaestro, setActualizarLista }) => {
         const paraDatos = new FormData()
         paraDatos.append('imagen', file)
 
-        fetch('http://localhost:4000/api/editarimagen/1', {
+        fetch('https://apiserver.cbtis106.edu.mx/api/editarimagen/1', {
             method: 'PUT',
             body: paraDatos
         })
@@ -89,7 +89,7 @@ export const FormsMaestros = ({ maestro, setMaestro, setActualizarLista }) => {
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify(maestro)
         }
-        fetch('http://localhost:4000/api', requestInit)
+        fetch('https://apiserver.cbtis106.edu.mx/api', requestInit)
         .then(res => res.text())
         .then(res => console.log(res))
 
@@ -113,7 +113,7 @@ export const FormsMaestros = ({ maestro, setMaestro, setActualizarLista }) => {
 
     const ActualizarMaestro = id => {
         // Validación de los datos.
-        if(maestro.nombres === '' || maestro.apellidoPat === '' || maestro.academia === '' || maestro.correoElec === '' || maestro.gradoEstudios === '') {
+        if(maestro.nombres === '' || maestro.apellidoPat === '' || maestro.academia === '' || maestro.correoElec === '') {
             alert(' Los campos: Nombres, Apellido Paterno, Academia, Correo Electrónico y Grado Estudios. Son obligatorios.')
             return
         }
@@ -123,7 +123,7 @@ export const FormsMaestros = ({ maestro, setMaestro, setActualizarLista }) => {
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify(maestro)
         }
-        fetch('http://localhost:4000/api/' + id, requestInit)
+        fetch('https://apiserver.cbtis106.edu.mx/api/' + id, requestInit)
         .then(res => res.text())
         .then(res => console.log(res))
 

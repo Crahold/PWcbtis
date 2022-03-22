@@ -1,10 +1,8 @@
 import React from "react";
-import Navegacion from "./navegacion/Navegacion.js";
 
 export function GOEP2021() {
     return (
         <body>
-            <Navegacion />
             <div id="goep">
                 <div className='section1'>
                     <div className="row">

@@ -1,10 +1,8 @@
 import React from "react";
-import Navegacion from "./navegacion/Navegacion.js";
 
 export function WebinarInfo() {
     return (
         <body>
-            <Navegacion />
             <div id="webinar">
                 <div className='section1'>
                     <div className="row">

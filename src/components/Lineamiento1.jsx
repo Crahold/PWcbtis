@@ -1,10 +1,8 @@
 import React from "react";
-import Navegacion from "./navegacion/Navegacion.js";
 
 export function Lineamiento1() {
     return (
         <body>
-            <Navegacion />
             <div id="lineamientos">
                 <div className='section1'>
                     <div className="row">

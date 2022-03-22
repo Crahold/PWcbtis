@@ -1,10 +1,8 @@
 import React from "react";
-import Navegacion from "./navegacion/Navegacion.js";
 
 export function CongresoInvDoc() {
     return (
         <body>
-            <Navegacion />
             <div id="coninvdoc">
                 <div className='section1'>
                     <div className="row">

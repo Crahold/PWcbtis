@@ -6,7 +6,7 @@ export const TablaMaestros = ({ maestros, setMaestro, setActualizarLista }) => {
         const requestInit = {
             method: 'DELETE',
         }
-        fetch('http://localhost:4000/api/' + id, requestInit)
+        fetch('https://apiserver.cbtis106.edu.mx/api/' + id, requestInit)
         .then(res => res.text())
         .then(res => console.log(res))
 
@@ -31,7 +31,7 @@ export const TablaMaestros = ({ maestros, setMaestro, setActualizarLista }) => {
         var txtboxGradestudios = document.getElementById('Gradestudios');
         var txtboxFoto = document.getElementById('FOTO');
 
-        fetch('http://localhost:4000/api/' + id)
+        fetch('https://apiserver.cbtis106.edu.mx/api/' + id)
         .then(res => res.json())
         .then(data => {
             datos = data

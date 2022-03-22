@@ -1,10 +1,8 @@
 import React from "react";
-import Navegacion from "./navegacion/Navegacion.js";
 
 export function ManualSS() {
     return (
         <body>
-            <Navegacion />
             <div id="manuales">
                 <div className='section1'>
                     <div className="row">

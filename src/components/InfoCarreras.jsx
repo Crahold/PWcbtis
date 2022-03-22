@@ -1,10 +1,8 @@
 import React from "react";
-import Navegacion from "./navegacion/Navegacion.js";
 
 export function InfoCarreras() {
     return (
         <body>
-            <Navegacion />
             <div id="infocarreras">
                 <div className='section1'>
                     <div className="row">

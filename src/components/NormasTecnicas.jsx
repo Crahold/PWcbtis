@@ -1,10 +1,8 @@
 import React from "react";
-import Navegacion from "./navegacion/Navegacion.js";
 
 export function NormasTecnicas() {
     return (
         <body>
-            <Navegacion />
             <div id="normastecnicas">
                 <div className='section1'>
                     <div className="row">

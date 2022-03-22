@@ -1,10 +1,8 @@
 import React from "react";
-import Navegacion from "./navegacion/Navegacion.js";
 
 export function JaMexico() {
     return (
         <body>
-            <Navegacion />
             <div id="econpexito">
                 <div className='section1'>
                     <div className="row">

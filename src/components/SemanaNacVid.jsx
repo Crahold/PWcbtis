@@ -1,10 +1,8 @@
 import React from "react";
-import Navegacion from "./navegacion/Navegacion.js";
 
 export function SemanaNacVid() {
     return (
         <body>
-            <Navegacion />
             <div id="semananac">
                 <div className='section1'>
                     <div className="row">

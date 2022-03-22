@@ -26,7 +26,7 @@ export function InfoDocenteAdmin() {
 
     useEffect(() => {
         const getMaestros = () => {
-            fetch('http://localhost:4000/api')
+            fetch('https://apiserver.cbtis106.edu.mx/api/')
             .then(res => res.json())
             .then(res => setMaestros(res))
         }
@@ -49,3 +49,5 @@ export function InfoDocenteAdmin() {
         </body>
     );
 }
+
+export default InfoDocenteAdmin;

@@ -1,13 +1,12 @@
 import React, { useEffect, useState } from "react";
 /*import { useEffect, useState } from "react/cjs/react.production.min";*/
-import Navegacion from "./navegacion/Navegacion.js";
 import axios from "axios";
 
 export function InfoDocente() {
     const [maestros, setMaestros] = useState([])
 
     const loadData = () => {
-        axios.get('http://localhost:4000/api/6')
+        axios.get('https://apiserver.cbtis106.edu.mx/api/6')
         .then(result => {
             setMaestros(result.data)
         })
@@ -17,7 +16,6 @@ export function InfoDocente() {
 
     return (
         <body>
-            <Navegacion />
             {maestros.map((maestro, index) => (
                 <div id="infodocente">
                     <div className='section1'>
